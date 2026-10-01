@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proweb</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #0f1726;
+            color: white;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        .hero {
+            margin: 16px 28px;
+            padding: 82px;
+            min-height: 810px;
+            background: #202b3b;
+            border-radius: 38px;
+        }
+
+        .badge-web {
+            display: inline-block;
+            background: #13a8e5;
+            padding: 14px 28px;
+            border-radius: 40px;
+            font-size: 21px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .judul {
+            font-size: 76px;
+            line-height: 1.08;
+            font-weight: 700;
+            margin-bottom: 38px;
+        }
+
+        .judul span {
+            color: #25b5ee;
+        }
+
+        .deskripsi {
+            font-size: 25px;
+            line-height: 1.8;
+            color: #d7dce5;
+            max-width: 850px;
+            margin-bottom: 45px;
+        }
+
+        .btn-belajar {
+            background: #13a8e5;
+            color: white;
+            border: none;
+            padding: 20px 42px;
+            border-radius: 15px;
+            font-size: 25px;
+            font-family: inherit;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-belajar:hover {
+            background: #0798d2;
+            color: white;
+        }
+
+        .gambar-box {
+            background: #0d1629;
+            padding: 52px;
+            border-radius: 38px;
+        }
+
+        .gambar-box img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .info {
+            margin-top: 38px;
+        }
+
+        .info-box {
+            background: #3a4658;
+            padding: 23px;
+            border-radius: 18px;
+            font-size: 26px;
+            color: #f1f3f5;
+        }
+
+        @media (max-width: 992px) {
+
+            .hero {
+                padding: 45px 30px;
+                margin: 15px;
+            }
+
+            .judul {
+                font-size: 55px;
+            }
+
+            .deskripsi {
+                font-size: 20px;
+            }
+
+            .gambar-box {
+                margin-top: 45px;
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .hero {
+                padding: 35px 20px;
+            }
+
+            .judul {
+                font-size: 42px;
+            }
+
+            .badge-web {
+                font-size: 16px;
+            }
+
+            .deskripsi {
+                font-size: 18px;
+            }
+
+            .btn-belajar {
+                font-size: 19px;
+                padding: 16px 28px;
+            }
+
+            .info-box {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <div class="row align-items-center">
+
+            <!-- BAGIAN KIRI -->
+            <div class="col-lg-7">
+
+                <div class="badge-web">
+                    WEB PROGRAMMING
+                </div>
+
+                <h1 class="judul">
+                    Belajar Web<br>
+                    Jadi Lebih <span>Mudah.</span>
+                </h1>
+
+                <p class="deskripsi">
+                    Selamat datang di Proweb. Pelajari HTML, CSS,
+                    Bootstrap, dan dasar-dasar pemrograman web
+                    dengan cara yang sederhana.
+                </p>
+
+                <a href="#materi" class="btn-belajar">
+                    Mulai Belajar →
+                </a>
+
+                <!-- INFO -->
+                <div class="row g-4 info">
+
+                    <div class="col-md-4">
+                        <div class="info-box">
+                            HTML
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info-box">
+                            CSS
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info-box">
+                            Bootstrap
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BAGIAN KANAN -->
+            <div class="col-lg-5">
+
+                <div class="gambar-box">
+
+                    <img src="fasilkom-ti.jpeg"
+                         alt="Fasilkom-TI">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -5,152 +5,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Proweb</title>
+    <title>Proweb Learning</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <!-- Font -->
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
 
         body {
             margin: 0;
-            background: #0f1726;
+            background: #111827;
             color: white;
-            font-family: "Josefin Sans", sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .navbar {
+            background: #1f2937 !important;
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .nav-link {
+            color: #d1d5db !important;
+            margin: 0 8px;
+        }
+
+        .nav-link:hover {
+            color: #38bdf8 !important;
         }
 
         .hero {
-            margin: 16px 28px;
-            padding: 82px;
-            min-height: 810px;
-            background: #202b3b;
-            border-radius: 38px;
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-box {
+            background: #1f2937;
+            border-radius: 25px;
+            padding: 55px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
 
         .badge-web {
             display: inline-block;
-            background: #13a8e5;
-            padding: 14px 28px;
-            border-radius: 40px;
-            font-size: 21px;
-            font-weight: 600;
-            margin-bottom: 25px;
+            background: #0ea5e9;
+            padding: 8px 18px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
         }
 
         .judul {
-            font-size: 76px;
-            line-height: 1.08;
+            font-size: 55px;
             font-weight: 700;
-            margin-bottom: 38px;
+            line-height: 1.1;
         }
 
         .judul span {
-            color: #25b5ee;
+            color: #38bdf8;
         }
 
         .deskripsi {
-            font-size: 25px;
-            line-height: 1.8;
-            color: #d7dce5;
-            max-width: 850px;
-            margin-bottom: 45px;
+            color: #cbd5e1;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-top: 20px;
         }
 
         .btn-belajar {
-            background: #13a8e5;
-            color: white;
+            background: #0ea5e9;
             border: none;
-            padding: 20px 42px;
-            border-radius: 15px;
-            font-size: 25px;
-            font-family: inherit;
-            text-decoration: none;
-            display: inline-block;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 10px;
+            font-size: 17px;
+            margin-top: 15px;
         }
 
         .btn-belajar:hover {
-            background: #0798d2;
+            background: #0284c7;
             color: white;
         }
 
         .gambar-box {
-            background: #0d1629;
-            padding: 52px;
-            border-radius: 38px;
+            background: #0f172a;
+            border-radius: 25px;
+            padding: 35px;
+            text-align: center;
         }
 
-        .gambar-box img {
+        .gambar {
             width: 100%;
-            display: block;
-            object-fit: cover;
+            max-width: 420px;
         }
 
         .info {
-            margin-top: 38px;
+            margin-top: 25px;
         }
 
-        .info-box {
-            background: #3a4658;
-            padding: 23px;
+        .info-item {
+            background: #374151;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            color: #e5e7eb;
+        }
+
+        /* TUGAS 2 */
+        .materi {
+            padding: 70px 0;
+        }
+
+        .materi h2 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .materi-subtitle {
+            color: #9ca3af;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #1f2937;
+            color: white;
+            border: none;
             border-radius: 18px;
-            font-size: 26px;
-            color: #f1f3f5;
+            height: 100%;
+            transition: 0.3s;
         }
 
-        @media (max-width: 992px) {
+        .card:hover {
+            transform: translateY(-7px);
+        }
 
-            .hero {
-                padding: 45px 30px;
-                margin: 15px;
-            }
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-title {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        .card-text {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .btn-card {
+            background: #0ea5e9;
+            color: white;
+            border: none;
+        }
+
+        .btn-card:hover {
+            background: #0284c7;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
 
             .judul {
-                font-size: 55px;
+                font-size: 40px;
             }
 
-            .deskripsi {
-                font-size: 20px;
+            .hero-box {
+                padding: 30px;
             }
 
             .gambar-box {
-                margin-top: 45px;
-                padding: 30px;
-            }
-        }
-
-        @media (max-width: 576px) {
-
-            .hero {
-                padding: 35px 20px;
-            }
-
-            .judul {
-                font-size: 42px;
-            }
-
-            .badge-web {
-                font-size: 16px;
-            }
-
-            .deskripsi {
-                font-size: 18px;
-            }
-
-            .btn-belajar {
-                font-size: 19px;
-                padding: 16px 28px;
-            }
-
-            .info-box {
-                font-size: 20px;
+                margin-top: 30px;
             }
         }
     </style>
@@ -158,65 +192,149 @@
 
 <body>
 
-    <section class="hero">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
 
-        <div class="row align-items-center">
+        <div class="container">
 
-            <!-- BAGIAN KIRI -->
-            <div class="col-lg-7">
+            <a class="navbar-brand" href="#">
+                Proweb
+            </a>
 
-                <div class="badge-web">
-                    WEB PROGRAMMING
-                </div>
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
 
-                <h1 class="judul">
-                    Belajar Web<br>
-                    Jadi Lebih <span>Mudah.</span>
-                </h1>
+                <span class="navbar-toggler-icon"></span>
 
-                <p class="deskripsi">
-                    Selamat datang di Proweb. Pelajari HTML, CSS,
-                    Bootstrap, dan dasar-dasar pemrograman web
-                    dengan cara yang sederhana.
-                </p>
+            </button>
 
-                <a href="#materi" class="btn-belajar">
-                    Mulai Belajar →
-                </a>
+            <div class="collapse navbar-collapse" id="menu">
 
-                <!-- INFO -->
-                <div class="row g-4 info">
+                <ul class="navbar-nav mx-auto">
 
-                    <div class="col-md-4">
-                        <div class="info-box">
-                            HTML
-                        </div>
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
 
-                    <div class="col-md-4">
-                        <div class="info-box">
-                            CSS
-                        </div>
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#materi">
+                            Materi
+                        </a>
+                    </li>
 
-                    <div class="col-md-4">
-                        <div class="info-box">
-                            Bootstrap
-                        </div>
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Tentang
+                        </a>
+                    </li>
 
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Kontak
+                        </a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex">
+
+                    <input class="form-control me-2"
+                        type="search"
+                        placeholder="Search">
+
+                    <button class="btn btn-outline-info">
+                        Cari
+                    </button>
+
+                </form>
 
             </div>
 
+        </div>
 
-            <!-- BAGIAN KANAN -->
-            <div class="col-lg-5">
+    </nav>
 
-                <div class="gambar-box">
 
-                    <img src="fasilkom-ti.jpeg"
-                         alt="Fasilkom-TI">
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-box">
+
+                <div class="row align-items-center">
+
+                    <!-- BAGIAN KIRI -->
+                    <div class="col-lg-7">
+
+                        <div class="badge-web">
+                            WEB PROGRAMMING
+                        </div>
+
+                        <h1 class="judul">
+                            Belajar Web
+                            <br>
+                            Jadi Lebih <span>Mudah.</span>
+                        </h1>
+
+                        <p class="deskripsi">
+                            Selamat datang di Proweb.
+                            Pelajari HTML, CSS, Bootstrap,
+                            dan dasar-dasar pemrograman web
+                            dengan cara yang sederhana.
+                        </p>
+
+                        <a href="#materi" class="btn btn-belajar">
+                            Mulai Belajar →
+                        </a>
+
+
+                        <!-- INFO -->
+                        <div class="info">
+
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="info-item">
+                                        HTML
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="info-item">
+                                        CSS
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="info-item">
+                                        Bootstrap
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BAGIAN KANAN -->
+                    <div class="col-lg-5">
+
+                        <div class="gambar-box">
+
+                            <img src="fasilkom-ti.jpeg"
+                                class="gambar"
+                                alt="Fasilkom-TI">
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -227,7 +345,119 @@
     </section>
 
 
-    <!-- BOOTSTRAP JS -->
+    <!-- TUGAS 2 -->
+    <section class="materi" id="materi">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <h2>
+                    Materi Pembelajaran
+                </h2>
+
+                <p class="materi-subtitle">
+                    Pelajari dasar-dasar pemrograman web
+                </p>
+
+            </div>
+
+
+            <!-- 3 KOLOM -->
+            <div class="row g-4">
+
+
+                <!-- CARD 1 -->
+                <div class="col-md-4">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                HTML
+                            </h5>
+
+                            <p class="card-text">
+                                HTML digunakan untuk membuat
+                                struktur dasar sebuah halaman
+                                website.
+                            </p>
+
+                            <a href="#" class="btn btn-card">
+                                Pelajari
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="col-md-4">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                CSS
+                            </h5>
+
+                            <p class="card-text">
+                                CSS digunakan untuk mengatur
+                                tampilan dan membuat website
+                                menjadi lebih menarik.
+                            </p>
+
+                            <a href="#" class="btn btn-card">
+                                Pelajari
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="col-md-4">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Bootstrap
+                            </h5>
+
+                            <p class="card-text">
+                                Bootstrap membantu membuat
+                                website yang responsif dengan
+                                komponen yang siap digunakan.
+                            </p>
+
+                            <a href="#" class="btn btn-card">
+                                Pelajari
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
